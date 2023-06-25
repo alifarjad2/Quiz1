@@ -33,7 +33,7 @@
     </style>
   </head>
   <body>
-    <h1 id="h1">alireza sepehri</h1>
+    <h1>alireza sepehri</h1>
     <input type="text" id="myInput" />
     <button id="btn">کلیک</button>
 
@@ -43,18 +43,16 @@
 
       const btn = document.getElementById("btn");
       btn.onclick = function () {
-        // btn.addClass("click");
-
-        const name = h1.textContent;
-        const inputvalue = input.value;
-
-        if (name === inputvalue) {
-          input.classList.add(".success");
-          alert("آره خودشه :)");
-        } else {
-          input.classList.add(".error");
-        }
+        btn.addClass("click");
       };
+
+      const name = h1.textContent();
+      const inputvalue = input.textContent();
+      if (name === inputvalue) {
+        input.addclass(".success");
+      } else {
+        input.addclass(".error");
+      }
     </script>
   </body>
 </html>
