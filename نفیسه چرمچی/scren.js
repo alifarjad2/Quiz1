@@ -1,9 +1,9 @@
-let Name = document.getElementById("name").value
+let Name = document.getElementById("name").value;
 
-function validation (){
-if(Name == " نفیسه "){
-alert (" درست")
-}else{
-    alert (" غلط ")
-}
+function validation() {
+  if (Name == " نفیسه ") {
+    alert(" درست");
+  } else {
+    alert(" غلط ");
+  }
 }
