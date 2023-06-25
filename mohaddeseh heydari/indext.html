@@ -1,0 +1,28 @@
+<style>
+  .btn {
+    background-color: blue;
+    color: white;
+  }
+
+  .btn:hover {
+    color: green;
+  }
+</style>
+
+
+
+<input id="myText" type="text" placeholder="متن ورودی" autofocus />
+<button class="btn" type="submit" onclick="myFunction()">انجام</button>
+
+
+<script>
+  function myFunction() {
+    x = document.getElementById("myText").value;
+    if (x == "mohaddeseh") {
+      alert("نام شما درست است")
+    }
+    else {
+      alert("غلط است")
+    }
+  }
+</script>

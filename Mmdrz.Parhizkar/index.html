@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Reza Parhizkar</title>
+
+    <style>
+        button{
+            background-color: skyblue;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        button:hover
+        {
+            background-color: green;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Parhizkar</h1>
+    <input type="text" autofocus name="esm" id="user">
+    <button onclick="alert1()" >انجام</button>
+
+
+    <script defer>
+
+        function alert1 () {
+            var userName = document.getElementById('user').value;
+
+            if ( userName == "" )
+            {
+                alert("empty field");
+            }
+            else{
+                alert(userName);
+            }
+        }
+
+    </script>
+</body>
+</html>

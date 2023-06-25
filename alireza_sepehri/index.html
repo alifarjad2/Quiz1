@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #btn {
+        background-color: blue;
+        color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 1px 2px 3px #ccc;
+        padding: 5px;
+        cursor: pointer;
+      }
+
+      input {
+        padding: 5px;
+      }
+
+      #btn.click {
+        box-shadow: none;
+      }
+
+      .success {
+        border: 1px solid green;
+      }
+
+      .error {
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="h1">alireza sepehri</h1>
+    <input type="text" id="myInput" />
+    <button id="btn">کلیک</button>
+
+    <script>
+      const input = document.getElementById("myInput");
+      input.focus();
+
+      const btn = document.getElementById("btn");
+      btn.onclick = function () {
+        // btn.addClass("click");
+
+        const name = h1.textContent;
+        const inputvalue = input.value;
+
+        if (name === inputvalue) {
+          input.classList.add(".success");
+          alert("آره خودشه :)");
+        } else {
+          input.classList.add(".error");
+        }
+      };
+    </script>
+  </body>
+</html>
